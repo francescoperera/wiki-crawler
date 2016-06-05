@@ -1,0 +1,47 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module main</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>main</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/francescoperera/Desktop/Perera_Francesco-Moat_Q8/main.py">/Users/francescoperera/Desktop/Perera_Francesco-Moat_Q8/main.py</a></font></td></tr></table>
+    <p><tt>this&nbsp;script&nbsp;executes&nbsp;the&nbsp;crawling&nbsp;and&nbsp;calculates&nbsp;the&nbsp;percentage&nbsp;of&nbsp;pages&nbsp;that&nbsp;made&nbsp;it&nbsp;to&nbsp;the&nbsp;Philosophy&nbsp;page&nbsp;and&nbsp;the&nbsp;distribution&nbsp;of&nbsp;all&nbsp;path&nbsp;lenghts</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td><td width="25%" valign=top><a href="wiki_crawler.html">wiki_crawler</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-crawl"><strong>crawl</strong></a>(url, i)</dt><dd><tt>crawl&nbsp;takes&nbsp;a&nbsp;url&nbsp;and&nbsp;crawls&nbsp;until&nbsp;it&nbsp;gets&nbsp;to&nbsp;Philosophy&nbsp;or&nbsp;it&nbsp;gets&nbsp;stuck&nbsp;in&nbsp;loop.&nbsp;<br>
+The&nbsp;function&nbsp;crawls&nbsp;i(integer)&nbsp;different&nbsp;Wikipedia&nbsp;pages.&nbsp;The&nbsp;function&nbsp;returns&nbsp;a&nbsp;dictionary&nbsp;with&nbsp;the&nbsp;total&nbsp;crawling&nbsp;history&nbsp;for&nbsp;all&nbsp;i&nbsp;pages<br>
+and&nbsp;the&nbsp;number&nbsp;of&nbsp;&nbsp;atempts&nbsp;that&nbsp;either&nbsp;reached&nbsp;or&nbsp;not&nbsp;the&nbsp;Philosophy&nbsp;page.</tt></dd></dl>
+ <dl><dt><a name="-path_length_distribution"><strong>path_length_distribution</strong></a>(crawling_history)</dt><dd><tt>path_length_distribution&nbsp;takes&nbsp;the&nbsp;crawling&nbsp;history&nbsp;dictionary&nbsp;and&nbsp;uses&nbsp;to&nbsp;create&nbsp;a&nbsp;new&nbsp;dictionary&nbsp;with&nbsp;the&nbsp;distribution&nbsp;of&nbsp;each&nbsp;path&nbsp;length.<br>
+The&nbsp;function&nbsp;also&nbsp;returns&nbsp;the&nbsp;most_frequent_path_length</tt></dd></dl>
+ <dl><dt><a name="-percentage"><strong>percentage</strong></a>(x, y)</dt><dd><tt>the&nbsp;function&nbsp;takes&nbsp;integers&nbsp;calculates&nbsp;the&nbsp;percentage&nbsp;for&nbsp;x</tt></dd></dl>
+ <dl><dt><a name="-save_crawling_to_file"><strong>save_crawling_to_file</strong></a>(d, f)</dt><dd><tt>save_crawling_to_file&nbsp;takes&nbsp;some&nbsp;data&nbsp;d&nbsp;and&nbsp;a&nbsp;file&nbsp;f&nbsp;as&nbsp;input&nbsp;and&nbsp;saves&nbsp;d&nbsp;into&nbsp;f.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>paths_dict</strong> = {}</td></tr></table>
+</body></html>

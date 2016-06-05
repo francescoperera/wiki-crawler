@@ -1,0 +1,52 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module wiki_crawler</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>wiki_crawler</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/francescoperera/Desktop/Perera_Francesco-Moat_Q8/wiki_crawler.py">/Users/francescoperera/Desktop/Perera_Francesco-Moat_Q8/wiki_crawler.py</a></font></td></tr></table>
+    <p><tt>this&nbsp;script&nbsp;contains&nbsp;all&nbsp;the&nbsp;function&nbsp;required&nbsp;to&nbsp;crawl&nbsp;wikipedia</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="re.html">re</a><br>
+</td><td width="25%" valign=top><a href="requests.html">requests</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-clean_paragraph"><strong>clean_paragraph</strong></a>(p)</dt><dd><tt>clean_paragraph&nbsp;takes&nbsp;a&nbsp;p(an&nbsp;html&nbsp;paragraph)&nbsp;and&nbsp;replaces&nbsp;span&nbsp;tags&nbsp;(which&nbsp;contain&nbsp;italicized&nbsp;links)&nbsp;with&nbsp;empty&nbsp;strings.&nbsp;<br>
+The&nbsp;function&nbsp;also&nbsp;replaces&nbsp;the&nbsp;text&nbsp;and&nbsp;tags&nbsp;enclosed&nbsp;by&nbsp;parenthesis&nbsp;with&nbsp;empty&nbsp;strings.<br>
+The&nbsp;function&nbsp;returns&nbsp;the&nbsp;cleaned/corrected&nbsp;paragraph&nbsp;named&nbsp;corrected_p</tt></dd></dl>
+ <dl><dt><a name="-crawl_to_philosophy"><strong>crawl_to_philosophy</strong></a>(url, paths_dict)</dt><dd><tt>crawl_to_philosophy&nbsp;takes&nbsp;an&nbsp;url&nbsp;and&nbsp;a&nbsp;dictionary&nbsp;called&nbsp;paths.&nbsp;It&nbsp;crawls&nbsp;through&nbsp;wikipedia&nbsp;pages&nbsp;until&nbsp;it&nbsp;reaches&nbsp;the&nbsp;Philosophy&nbsp;page&nbsp;<br>
+or&nbsp;until&nbsp;it&nbsp;gets&nbsp;stuck&nbsp;in&nbsp;a&nbsp;loop&nbsp;and&nbsp;it&nbsp;returns&nbsp;a&nbsp;dummy&nbsp;variable&nbsp;-1.<br>
+The&nbsp;function&nbsp;returns&nbsp;the&nbsp;number&nbsp;of&nbsp;wikipedia&nbsp;pages&nbsp;it&nbsp;clicked&nbsp;through&nbsp;to&nbsp;get&nbsp;the&nbsp;to&nbsp;the&nbsp;Philosophy&nbsp;page&nbsp;or&nbsp;-1&nbsp;if&nbsp;it&nbsp;did&nbsp;not&nbsp;get&nbsp;to&nbsp;that&nbsp;page.</tt></dd></dl>
+ <dl><dt><a name="-get_next_page_link"><strong>get_next_page_link</strong></a>(url)</dt><dd><tt>get_next_page_link&nbsp;takes&nbsp;an&nbsp;url&nbsp;as&nbsp;input&nbsp;and&nbsp;parses&nbsp;the&nbsp;html&nbsp;to&nbsp;find&nbsp;the&nbsp;next&nbsp;valid&nbsp;link.<br>
+If&nbsp;a&nbsp;next&nbsp;valid&nbsp;link&nbsp;is&nbsp;found,&nbsp;the&nbsp;function&nbsp;returns&nbsp;next_link.&nbsp;However,&nbsp;if&nbsp;no&nbsp;valid&nbsp;link<br>
+is&nbsp;found,&nbsp;the&nbsp;function&nbsp;returns&nbsp;a&nbsp;dummy&nbsp;value&nbsp;of&nbsp;-1.</tt></dd></dl>
+ <dl><dt><a name="-send_requests"><strong>send_requests</strong></a>(url)</dt><dd><tt>send_requests&nbsp;takes&nbsp;an&nbsp;url&nbsp;and&nbsp;sends&nbsp;a&nbsp;get&nbsp;request.&nbsp;The&nbsp;received&nbsp;response&nbsp;object&nbsp;is<br>
+then&nbsp;turned&nbsp;into&nbsp;a&nbsp;BeautifulSoup&nbsp;object</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>requests_count</strong> = 0<br>
+<strong>stop_url</strong> = 'http://en.wikipedia.org/wiki/Philosophy'</td></tr></table>
+</body></html>
